@@ -1,0 +1,166 @@
+html {
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-color: #fff;
+	background-image: url(images/main-bg.jpg);
+	background-origin: padding-box;
+}
+
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	text-align: center;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 400%;
+	color: #fff;
+	font-weight: normal;
+	/*text-shadow: 3px 3px 5px #666;*/
+}
+
+#wrapper {
+	text-align: left;
+	width: 700px;
+	margin: auto;
+	border: solid 0px #ccc;
+	padding: 10px;
+}
+
+#textInput {
+	width: 100%;
+	height: 100px;
+
+	font-family: Monaco, Consolas, Monospace;
+}
+
+#playButton {
+	width: 100%;
+	height: 50px;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+div.section {
+	border-bottom-right-radius: 14px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	box-shadow: rgb(200, 200, 200) 0px 0px 15px 0px;
+	color: black;
+	display: block;
+	line-height: 16px;
+	margin-bottom: 42px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 7px;
+	opacity: 1.0;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	text-decoration: none;
+	background-color: #fff;
+}
+div.sectionHeading {
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	background: #00D839;
+	padding-top: 15px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 10px;
+	border-bottom: solid 2px #999;
+}
+
+div.sectionHeading h2 {
+	display: inline;
+	height: 29px;
+	margin-top: 30px;
+	position: relative;
+	top: 10px;
+}
+
+div.sectionContent {
+	padding-left: 17px;
+	padding-right: 17px;
+}
+ 
+#twitterInput {
+	display: none;
+}
+
+#basicInputButton {
+	display: none;
+}
+
+#twitterSearchInput {
+	padding: 3px;
+	font-size: 125%;
+	width: 100%;
+}
+
+#twitterMessage {
+	display: none;
+}
+
+#twitterResults {
+	display: none;
+}
+
+#showTwitterResultsButton {
+	display: none;
+}
+
+#twitterResultsSection {
+	display: none;
+}
+
+.tweet {
+	border-bottom-right-radius: 14px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	background: #eee;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+}
+
+.tweet div {
+	margin: 0px;
+	line-height: 20px;
+}
+
+.tweetContent {
+	float: right;
+	width: 575px;
+	margin-top: 5px;
+}
+
+.tweet img {
+	float: left;
+	width: 50px;
+	margin: 5px;
+}
+
+div.clear{ 
+	clear: both; 
+}
+
+#presetJson {
+	display: none;
+}
+
+#advancedSettings {
+	display: none;
+}
+
+#basicSettingsButton{
+	display: none;
+}
+
+button.headingButton {
+	padding: 7px;
+	font-size: 100%;
+}

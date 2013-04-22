@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>txt2sound</title>
+	<link rel="stylesheet" href="styles/txt2sound.css"/>
+	<link rel="stylesheet" href="styles/jquery-ui.css"/>	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.json-2.3.min.js"></script>
+	<script type="text/javascript" src="js/audiolib.min.js"></script>
+	<script type="text/javascript" src="js/txt2sound.js"></script>
+	<script type="text/javascript" src="js/txt2sound.ui.js"></script>
+	
+</head>
+<body>
+	<div id="wrapper">
+	
+		<h1>txt2sound</h1>
+		
+		<div class="section">
+			<div class="sectionHeading">
+				<h2>Play Text as Sound</h2>
+				<button style="float: right;" class="headingButton" id="searchTwitterButton">search twitter &gt;&gt;</button>
+				<button style="float: right;" class="headingButton" id="basicInputButton">&lt;&lt; basic input</button>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="sectionContent">
+			
+				<div id="basicInput">
+					<p><textarea id="textInput">type something here. add some @special #characters. see what happens! audiolib.js and javascript. </textarea></p>
+				</div>
+				
+				<div id="twitterInput">
+					<p>Search Twitter and play some tweets. Hit enter to search, then click Play.</p>
+					<input id="twitterSearchInput"/>
+					<p id="twitterMessage"></p>
+				</div>
+			
+				<div>
+					<p><button id="playButton">Play</button></p>	
+
+					<p style="font-size: 260%;background: red;">
+						<span id="currentChar" style="color: #000;float: right;white-space:pre;">&nbsp;</span>
+						<span id="prevChars" style="color: #ccc;float:right;white-space:pre"></span>
+						<div style="clear: both;">&nbsp;</div>
+					</p>
+				</div>
+				
+				<div id="twitterResultsSection">
+					<p><button id="showTwitterResultsButton">Show Tweets</button></p>
+					
+					<div id="twitterResults">
+						<p>twitter results...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<div class="sectionHeading">
+				<h2 id="settingsHeading">Settings</h2>
+				<button style="float: right;" class="headingButton" id="advancedSettingsButton">advanced settings &gt;&gt;</button>
+				<button style="float: right;" class="headingButton" id="basicSettingsButton">&lt;&lt; basic settings</button>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="sectionContent">
+
+				<div id="basicSettings">
+					<p>Presets:<br/>
+						<select id="presetSelect"></select>
+					</p>
+				</div>
+				
+				<div id="advancedSettings">
+				
+					<p>Drums:
+						<input type="checkbox" id="drumsCheckBox"> Enabled
+					</p>
+
+					<p>Tempo:
+						<div id="tempoSlider"></div>
+					</p>
+
+					<p>Octave:<br/>
+						<div id="octaveSlider"></div>
+					</p>
+
+					<p>Wave form:<br/>
+						<select id="waveShapeSelect">
+							<option value="sine" selected="true">sine</option>
+							<option value="sawtooth">sawtooth</option>
+							<option value="invSawtooth">invSawtooth</option>
+							<option value="square">square</option>
+							<option value="triangle">triangle</option>
+						</select>
+					</p>
+
+					<p>Note Length:
+						<div id="noteLengthSlider"></div>
+					</p>
+
+					<p>Attack:
+						<div id="attackSlider"></div>
+					</p>
+
+					<p>Release:
+						<div id="releaseSlider"></div>
+					</p>
+
+					<p>LFO Wave form:<br/>
+						<select id="lfoWaveShapeSelect">
+							<option value="sine" selected="true">sine</option>
+							<option value="sawtooth">sawtooth</option>
+							<option value="invSawtooth">invSawtooth</option>
+							<option value="square">square</option>
+							<option value="triangle">triangle</option>
+						</select>
+					</p>
+
+					<p>LFO Hz:
+						<div id="lfoHzSlider"></div>
+					</p>
+
+					<p>LFO Amount:<br/>
+						<div id="lfoAmountSlider"></div>
+					</p>
+
+					<p>Reverb Dry:<br/>
+						<div id="reverbDrySlider"></div>
+					</p>
+
+					<p>Reverb Wet:<br/>
+						<div id="reverbWetSlider"></div>
+					</p>
+
+					<p>Reverb Size:<br/>
+						<div id="reverbSizeSlider"></div>
+					</p>
+					
+					<p><button id="presetButton">Preset</button><br/>
+					<textarea id="presetJson" rows="10" cols="60"></textarea></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
