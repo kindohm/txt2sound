@@ -299,7 +299,8 @@
 				$('#showTwitterResultsButton').hide();
 				$('#twitterSearchInput').attr('disabled', true);
 				$('#playButton').attr('disabled', true);
-				var uri = 'http://search.twitter.com/search.json?q=' + $('#twitterSearchInput').val() + '&callback=?';
+				var uri = 'http://search.twitter.com/search.json?q=' + 
+					$('#twitterSearchInput').val().replace('#', '%23') + '&callback=?';
 				
 				$('#twitterResults').empty();
 				
